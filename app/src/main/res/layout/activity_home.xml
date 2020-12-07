@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:gravity="center"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAIT"
+        android:typeface="serif"
+        android:textSize="30sp"
+        android:paddingLeft="78dp"
+        android:paddingBottom="10dp" />
+
+    <ImageButton
+        android:layout_below="@id/textView2"
+        android:id="@+id/studentImageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="15dp"
+        android:onClick="goToStudent"
+        android:background="#fff"
+        android:src="@drawable/student_image"
+        android:padding="30dp"/><!-- set 30dp padding from all the sides of the view-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:typeface="serif"
+        android:layout_below="@+id/studentImageButton"
+        android:paddingLeft="24dp"
+        />
+    <ImageButton
+        android:id="@+id/adminImageButton"
+        android:layout_width="100dp"
+        android:onClick="goToAdmin"
+        android:layout_height="100dp"
+        android:background="#fff"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@+id/studentImageButton"
+        android:src="@drawable/admin_settings"
+
+        android:padding="30dp"/><!-- set 30dp padding from all the sides of the view-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:typeface="serif"
+        android:layout_below="@+id/adminImageButton"
+        android:layout_toRightOf="@+id/studentImageButton"
+        android:paddingLeft="24dp"/>
+
+
+
+</RelativeLayout>
+
+

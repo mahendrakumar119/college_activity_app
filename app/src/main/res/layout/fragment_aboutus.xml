@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutUsFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/rait"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:typeface="serif"
+        android:text="RAIT"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+        <TextView
+            android:id="@+id/aboutus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#000011"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:editable="false"
+            android:cursorVisible="false"
+            android:text="          Engineers today have propelled the world to a new era of technological advancement. Blending curiosity with scientific temperament is the need of the hour as the world faces a new set of challenges. Nurturing this spirit for over a 37 years stands Ramrao Adik Institue of Technology (RAIT), a prodigy of Ramrao Adik Education Society. The institute is one of the oldest and finest colleges of Navi Mumbai. Located in the lush green Dr. D Y Patil Technical Campus, RAIT provides state of the art amenities, which combined with experienced teachers and an amicable environment ensure an all-round development of students. Its proximity to the Mumbai-Pune Express Highway makes it easily accessible. The institution also organizes various student centric activities which provide students with umpteen number of learning opportunities.\n\n
+        RAIT offers a plethora of courses including Computer Engineering, Information Technology, Electronics Engineering, Electronics and Telecommunication Engineering and Instrumentation Engineering. RAIT is affiliated to DY Patil Deemed to be University, recognized by All India Council for Technical Education (AICTE) and accredited by National Assessment and Accreditation Council with “A” grade, paving way for a promising future.\n\n
+        Like most successfully managed institutions, RAIT also believes in following the principles of democratic governance. Various committees are set up to ensure the smooth functioning of the institute. Regular and periodic meetings are held among the committees which involve the management, faculty and staff to address essential issues and to ensure proper coordination among the various departments, committee conveners and administrative staff.\n\n
+        An institution progresses when its mainstay, the student community prospers. This can be seen in the various steps taken by the institute to ensure a contented student force in its campus. Counsellors are appointed to counsel the students and redress their grievances if any. An institution grows only when it makes appropriate changes from time to time. Such a change is possible only if there is a feedback system. The institution follows an efficient system of collecting feedback about faculty performance from the students. The faculty appraisals are collected and reviewed periodically by Quality Assurance Team of RAIT.\n\n
+        The performers amongst students are rewarded with scholarships and tuition fee waivers. The performing faculty also receives recognition from management for their academic performance.
+    " />
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/home"
+    tools:context=".AdminRegister">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="#392073"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:text="ADMIN REGISTER"/>
+
+
+
+    <EditText
+        android:id="@+id/reg_admin_username"
+        android:layout_marginBottom="20dp"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:ellipsize="start"
+        android:typeface="serif"
+        android:singleLine="true"
+        android:gravity="center"
+        android:background="@drawable/edit_text_border"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/reg_admincode"
+        android:layout_marginBottom="20dp"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:ellipsize="start"
+        android:typeface="serif"
+        android:singleLine="true"
+        android:gravity="center"
+        android:background="@drawable/edit_text_border"
+        android:hint="Admin Code"/>
+
+
+    <EditText
+        android:id="@+id/reg_admin_password"
+        android:layout_width="180dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="35dp"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:typeface="serif"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_border"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="180dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="35dp"
+        android:typeface="serif"
+        android:background="@drawable/mybutton"
+        android:textColor="#FFFFFF"
+        android:text="Register"/>
+
+</LinearLayout>
+
+

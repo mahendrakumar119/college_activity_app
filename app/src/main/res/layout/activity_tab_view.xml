@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".AddEventFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".TabViewActivity">
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp"-->
+<!--        android:paddingLeft="40dp"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:theme="@style/AdminStyle"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="40dp"
+        android:paddingBottom="22dp"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:text="Admin Section"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AdminStyle"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabview"
+        app:tabTextColor="#fff"
+        android:typeface="serif"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AdminStyle"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:typeface="serif"
+        android:id="@+id/pager"
+         />
+
+</LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_marginTop="24dp"
+        android:onClick="adminLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:borderWidth="0dp"
+        android:background="#0000"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="5dp"
+        app:backgroundTint="#00FFFFFF"
+        android:src="@drawable/ic_baseline_exit_to_app_24"/>
+</FrameLayout>
